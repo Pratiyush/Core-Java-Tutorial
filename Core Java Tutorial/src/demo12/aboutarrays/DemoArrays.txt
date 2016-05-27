@@ -1,0 +1,75 @@
+1) Declaring Array Variables
+int anIntArray[], oneInteger;
+Pizza[] mediumPizzas, largePizzas;
+
+2) Constructing an Array
+int anIntArray[], oneInteger;
+Pizza[] mediumPizzas, largePizzas;
+
+anIntArray = new int[10];            // array for 10 integers
+mediumPizzas = new Pizza[5];         // array of 5 pizzas
+largePizzas = new Pizza[3];          // array of 3 pizzas
+
+
+int[] anIntArray = new int[10];                  // Default element value: 0.
+
+Pizza[] mediumPizzas = new Pizza[5];             // Default element value: null.
+
+// Pizza class extends Object class
+Object objArray = new Pizza[3];                  // Default element value: null.
+
+// Pizza class implements Eatable interface
+Eatable[] eatables = new Pizza[2];               // Default element value: null.
+
+
+
+3) Initializing an Array
+int[] anIntArray = {1, 3, 49, 2, 6, 7, 15, 2, 1, 5};
+
+// Pizza class extends Object class
+Object[] objArray = { new Pizza(), new Pizza(), null };
+
+
+// Array with 4 String objects
+String[] pets = {"crocodiles", "elephants", "crocophants", "elediles"}; // (1)
+
+// Array of 3 characters
+char[] charArray = {'a', 'h', 'a'};    // (2) Not the same as "aha".
+
+
+
+4) Using an Array
+<array name> [<index expression>]
+
+
+5) Anonymous Arrays
+
+new int[] {3, 5, 2, 8, 6};
+
+6) Multi dimensional Arrays
+int[][] mXnArray;      // 2-dimensional array
+int[]   mXnArray[];    // 2-dimensional array
+int     mXnArray[][];  // 2-dimensional array
+
+double[][] identityMatrix = {
+    {1.0, 0.0, 0.0, 0.0 }, // 1. row
+    {0.0, 1.0, 0.0, 0.0 }, // 2. row
+    {0.0, 0.0, 1.0, 0.0 }, // 3. row
+    {0.0, 0.0, 0.0, 1.0 }  // 4. row
+}; // 4 x 4 Floating-point matrix
+
+
+Pizza[][] pizzaGalore = {
+ { new Pizza(), null, new Pizza() },    // 1. row is an array of 3 elements.
+ { null, new Pizza()},                  // 2. row is an array of 2 elements.
+ new Pizza[1],                          // 3. row is an array of 1 element.
+ {},                                    // 4. row is an array of 0 elements.
+ null                                   // 5. row is not constructed.
+};
+
+
+double[][] matrix = new double[3][];      // No. of rows.
+
+for (int i = 0; i < matrix.length; ++i)
+   matrix[i] = new double[i + 1];         // Construct a row
+   
